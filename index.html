@@ -5,21 +5,27 @@
         <link rel="stylesheet" href="index.css" type="text/css">
         <script defer src="index.js"></script>
     </head>
-    <body>
+    <body contentEditable="true">
         <h1 id="intro">
             Welcome User
         </h1>
         <p id="about"></p>
         <button id="introduce">Introduce Yourself</button>
-        <form id="more-about-you">
+        <form id="more-info">
             <legend>
                 Tell me more about Yourself
             </legend>
             <div>
-                <input type="text" name="hobby">
+                <label for="hobby">
+                    Hobby:
+                </label>
+                <input type="text" name="hobby" id="hobby">
             </div>
             <div>
-                <input type="text" name="location">
+                <label for="location">
+                    Location:
+                </label>
+                <input type="text" name="location" id="location">
             </div>
             <div>
                 <input type="submit" value="introduce yourself">
